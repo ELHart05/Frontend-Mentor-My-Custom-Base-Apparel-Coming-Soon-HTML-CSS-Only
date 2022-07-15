@@ -16,8 +16,17 @@ body {
 
 
 .main_bg_desk {
-    height: 100vmin;
+    height: 100%;
     float: right;
+    width: 50%;
+}
+
+form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 10%;
+    margin-top: 3%;
 }
 
 
@@ -80,8 +89,6 @@ h1 {
     border-radius: 400px;
     background-color: transparent;
     color: hsl(0, 36%, 70%);
-    margin-left: 10%;
-    margin-top: 3%;
     font-size: 18px;
     padding-left: 20px;
 }
@@ -91,12 +98,13 @@ h1 {
 }
 
 .button {
+    position: relative;
+    left: -50px;
     border: 1px solid transparent;
     border-radius: 400px;
-    height: 48px;
+    height: 50px;
     width: 72px;
     cursor: pointer;
-    transform: translate(-78%, 6px);
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 
@@ -112,7 +120,7 @@ h1 {
 
 
 
-@media (max-width: 1025px) and (min-width: 100px) {
+@media (max-width: 950px) {
     body {
         background-color: hsl(0, 36%, 91%);
         background-image: none;
@@ -143,78 +151,26 @@ h1 {
 
 
     .paragraph {
-        width: 100%;
+        width: 80%;
+        margin-top: 50px;
         padding: 0;
-        margin: 50px 0 0 0;
         text-align: center;
     }
 
+    form {
+        margin-top: 50px;
+    }
 
 
     .email {
         width: 60%;
         font-size: 16px;
-        margin-top: 12%;
         margin-bottom: 20px;
         margin-left: 13%;
     }
 
     .button {
-        width: 17%;
-        margin-left: 2%;
-        margin-bottom: 20px;
-    }
-}
-
-@media (max-width: 340px) and (min-width: 100px) {
-    body {
-        background-color: hsl(0, 36%, 91%);
-        background-image: none;
-    }
-
-
-    .logo {
-        margin-top: 7%;
-    }
-
-
-    .main_bg_desk {
-        display: none;
-    }
-
-    .main_bg_phone {
-        display: block;
-        width: 100%;
-        margin-top: 6%;
-    }
-
-
-    h1 {
-        margin-left: 0px;
-        text-align: center;
-        margin-top: 14%;
-    }
-
-
-    .paragraph {
-        margin-left: 0px;
-        margin-top: 5%;
-        width: 100%;
-        text-align: center;
-    }
-
-
-
-    .email {
-        width: 50%;
-        font-size: 16px;
-        margin-top: 12%;
-        margin-bottom: 20px;
-        margin-left: 13%;
-    }
-
-    .button {
-        width: 17%;
+        width: 20%;
         margin-left: 2%;
         margin-bottom: 20px;
     }
